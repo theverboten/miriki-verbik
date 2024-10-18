@@ -8,7 +8,7 @@
 
 
 
-<div class="col-8" style="margin: auto; width: 125%;">
+<div class="col-8" style="margin: auto; width: 135%;">
   
   <table width="900px">
             <div class="col-6" style=" width: 40%;">
