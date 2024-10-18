@@ -1,0 +1,72 @@
+@mixin button{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--button-height, 57px);
+    border: none;
+    border-radius: 38px;
+    text-decoration: none;
+    appearance: none;
+    padding: 10px 30px;
+    background-color: var(--button-bg-color, var(--color));
+    color: var(--button-color, #fff);
+    transition-duration: .3s;
+
+    // Hover
+    &:hover{
+        --button-bg-color: var(--bg-color);
+        --button-color: var(--color);
+        text-decoration: none;
+        transition-duration: .3s;
+    }
+}
+
+.button{
+    @include button;
+}
+
+
+// Colors
+/* @mixin button--primary{
+    --button-color: #fff;
+    --button-bg-color: var(--primary);
+
+    &:hover{
+        --button-bg-color: var(--secondary);
+    }
+}
+
+.button--primary{
+    @include button--primary;
+} */
+
+/* @mixin button--secondary{
+    --button-color: #fff;
+    --button-bg-color: var(--secondary);
+
+    &:hover{
+        --button-bg-color: var(--primary);
+    }
+}
+
+.button--secondary{
+    @include button--secondary;
+} */
+
+
+// Variants
+@mixin button--outline{
+    --button-color: var(--color);
+    --button-bg-color: transparent;
+    border: 1px solid var(--button-border-color, var(--color));
+
+    &:hover{
+        --button-color: #fff;
+        --button-bg-color: var(--color);
+    }
+}
+
+.button--outline{
+    @include button--outline;
+}

@@ -1,0 +1,28 @@
+@mixin text-xs{
+    font-size: var(--font-size-xs);
+}
+
+@mixin text-sm{
+    font-size: var(--font-size-sm);
+}
+
+@mixin text-md{
+    font-size: var(--font-size-md, var(--font-size));
+}
+
+@mixin text-lg{
+    font-size: var(--font-size-lg);
+}
+
+@mixin text-xl{
+    font-size: var(--font-size-xl);
+}
+
+@mixin text-2xl{
+    font-size: var(--font-size-2xl);
+}
+
+@mixin text-3xl{
+    font-size: var(--font-size-3xl);
+}
+

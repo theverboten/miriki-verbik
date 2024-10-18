@@ -1,0 +1,22 @@
+{
+    "project"         : "miriki",
+    "version"         : "0.0.0",
+
+    "wordpress"       : false,
+    "autoPostCSS"     : false,
+    "minifyCustomJS"  : false,
+    "production"      : false,
+
+    "path" : {
+        "src" : {
+            "base"    : "src",
+            "sass"    : "sass",
+            "styles"  : "public/css",
+            "images"  : "public/images",
+            "scripts" : "public/js"
+        },
+        "build" : {
+            "base"    : "dist"
+        }
+    }
+}

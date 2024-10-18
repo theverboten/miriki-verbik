@@ -1,0 +1,63 @@
+.text-page {
+    width: 50%;
+    margin: 0 auto;
+
+    &:last-of-type {
+        margin-bottom: calc(var(--section-padding) * 3);
+    }
+
+    &__title {
+        @include text-xl;
+        margin-bottom: calc(var(--section-padding)*1.5);
+    }
+    &__subtitle {
+        @include text-md;
+        margin-bottom: calc(var(--paragraph-spacing) * 2);
+    }
+
+    &__perex {
+        @include light;
+        margin-top: var(--paragraph-spacing);
+        font-family: var(--font-secondary);
+        color: var(--gray-dark);
+
+        strong  {
+            @include semibold;
+            font-family: var(--font);
+        }
+    }
+
+    &__list {
+        list-style: decimal;
+        list-style-position: inside;
+        color: var(--gray-dark);
+        @include semibold;
+
+        &__inner {
+            @include light;
+            margin-top: var(--paragraph-spacing);
+            font-family: var(--font-secondary);
+        }
+    }
+}
+
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+
+@include bp(md) {
+    .text-page {
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        width: 100%;
+
+        &__title {
+            @include text-lg;
+            margin-bottom: var(--section-padding);
+        }
+        &__subtitle {
+            @include text-sm;
+        }
+    }
+}

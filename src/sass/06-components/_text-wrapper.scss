@@ -1,0 +1,93 @@
+.text-wrapper {
+
+    &__title {
+        @include text-xl;
+    }
+
+    &__subtitle {
+        @include text-lg;
+        line-height: 1.2em;
+
+        & + .button {
+            margin-top: var(--paragraph-spacing);
+        }
+    }
+
+    &__perex {
+        @include light;
+        @include text-md;
+        font-family: var(--font-secondary);
+        max-width: 800px;
+    }
+
+    &__table {
+        font-family: var(--font-secondary);
+        margin-bottom: var(--gutter-y);
+        
+
+
+        table {
+            min-width: 200px;
+            margin: 0 auto;
+        }
+
+        td:first-of-type {
+            color: var(--secondary);
+            padding-right: 1rem;
+        }
+        td {
+            text-align: left;
+            @include light;
+        }
+    }
+
+    &.--right {
+        width: 65%;
+        margin-left: auto;   
+    }
+}
+
+
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+
+@include bp(md) {
+    .text-wrapper {
+        &__subtitle {
+            @include text-md;
+        }
+        &__title {
+            font-size: 24px;
+        }
+
+        &__perex {
+            @include text-sm;
+        }
+
+        &.--right {
+            width: 100%;
+            margin-left: auto;   
+        }
+    }
+}
+
+@include bp(sm) {
+    .text-wrapper {
+        &__table {
+            margin-top: 0;
+
+            table {
+                margin: 0;
+            }
+        }
+
+        .row {
+            margin-top: 0;
+        }
+        .col-6 {
+            margin-top: 0;
+        }
+    }
+}

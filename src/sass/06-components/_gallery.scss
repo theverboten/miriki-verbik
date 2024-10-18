@@ -1,0 +1,56 @@
+
+.gallery {
+    max-width: 1280px;
+    margin: 0 auto;
+    --grid-gap: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% -  calc(var(--grid-gap))/2));
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    grid-gap: var(--grid-gap);
+
+
+    &__item {
+        width: 100%;
+
+        &.--height {
+            grid-row: span 2;
+
+            .cover {
+                height: 100%;
+
+                &::before {
+                    padding-top: calc(var(--aspect-ratio, 132%) + var(--grid-gap));
+                }
+            }
+        }
+
+        &.--width {
+            grid-column: span 2;
+
+            .cover {
+                &::before {
+                    padding-top: var(--aspect-ratio, 55%);
+                }
+            }
+        }
+    }
+}
+
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+@include bp(md){
+
+    .gallery {
+        --grid-gap: 25px;
+    }
+}
+
+@include bp(sm){
+
+    .gallery {
+        --grid-gap: 15px;
+    }
+}

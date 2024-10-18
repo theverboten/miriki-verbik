@@ -1,0 +1,87 @@
+$css-vars: (
+    base: (
+        // Typography
+        --font: "'Alaska', sans-serif",
+        --font-secondary: "'Inter', sans-serif",
+
+        --font-size: 16px,
+        --line-height: 1.5,
+        --paragraph-spacing: 1.5rem,
+
+        --font-size-xs: 14px,
+        --font-size-sm: 18px,
+        --font-size-md: 20px,
+        --font-size-lg: 30px,
+        --font-size-xl: 36px,
+        --font-size-2xl: 48px,
+        --font-size-3xl: 70px,
+
+        --h0: 60px,
+        --h1: 70px,
+        --h2: 48px,
+        --h3: 36px,
+        --h4: 30px,
+        --h5: 20px,
+        --h6: 18px,
+
+
+        --font-light: 300,
+        --font-regular: 400,
+        --font-semibold: 500, 
+        // --font-bold: 700,
+
+
+        // Colors
+        --color: #000,
+        --bg-color: #fff,
+
+        --primary: #F4F2F0,
+        --secondary: #666666,
+
+        --light: #f2f2f2,
+        --dark: #212529,
+
+        --gray-light: #f2f2f2,
+        --gray: #999,
+        --gray-dark: #666,
+
+        --border-color: #dfdfdf,
+        --img-bg: var(--gray-light),
+ 
+        --green: #7ab573,
+        --orange: #f6b036,
+        --red: #de594a,
+
+        --info: var(--light),
+        --success: var(--green),
+        --warning: var(--orange),
+        --error: var(--red),
+
+
+        // Spacing
+        --spacing: 8px,
+
+
+        // Grid
+        --gutter-x: 50px,
+        --gutter-y: 50px,
+        --container-width: 100%,
+        --container-padding: 50px,
+
+        // Sections
+        --section-padding: 65px,
+
+
+        // Other
+        --border-radius: 5px,
+    ),
+    // Breakpoints
+    // Be careful not to leave behind empty arrays like md:().
+    md: (
+        --container-padding: 30px,
+        --section-padding: 80px,
+    ),
+    xs: (
+        --section-padding: 60px,
+    )
+) !default;

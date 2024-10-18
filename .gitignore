@@ -1,0 +1,30 @@
+# Build related files & folders
+/dist/
+/src/assets/css/
+/src/assets/js/scripts.js
+/src/assets/js/custom.min.js
+/src/assets/img/OLD/
+
+# WebManager
+/src/public/css/
+!/src/public/css/custom.css
+/src/public/js/scripts.js
+/src/public/js/custom.min.js
+/src/public/images/OLD/
+
+# Private files
+/local-config.json
+/TODO.txt
+/TODO.md
+
+# Node
+node_modules/
+npm-debug.log
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+nbproject/

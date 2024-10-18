@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 80.339 67.744" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="a">
+<rect width="80.339" height="67.744" fill="none" stroke="#000"/>
+</clipPath>
+</defs>
+<g clip-path="url(#a)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<path transform="translate(.011 .079)" d="M69.282,23.122V67.155H4.849a4.35,4.35,0,1,1,0-8.7H8.712V3.629H4.9a4.4,4.4,0,0,0-4.4,4.4V56.994"/>
+<line transform="translate(9.157 11.123)" x2="48.09"/>
+<path transform="translate(.289 1.276)" d="m13.365 59.013h40.207"/>
+<path transform="translate(1.21 1.276)" d="m55.973 59.013h5.112"/>
+<path transform="translate(.388 .846)" d="M17.949,45.95l.124,13.493H37.023V45.758l-9.538-6.62Z"/>
+<rect transform="translate(24.54 50.868)" width="6.668" height="9.42"/>
+<path transform="translate(.852 .011)" d="m70.844 1.918-29.773 30.252-1.654 8.155 8.4-1.467 29.8-30.279a4.748 4.748 0 0 0-6.768-6.661z"/>
+<line transform="translate(41.923 32.181)" x2="6.742" y2="6.687"/>
+<line transform="translate(69.663 4.52)" x2="6.195" y2="6.299"/>
+<line transform="translate(66.686 6.975)" x2="6.659" y2="6.771"/>
+<line transform="translate(14.666 17.646)" y2="10.174"/>
+<line transform="translate(18.474 17.646)" y2="5.556"/>
+</g>
+</svg>

@@ -1,0 +1,43 @@
+.card {
+
+    &__label {
+        @include text-sm;
+        width:70%;
+        max-width: 780px;
+        margin: .5rem 0 0 0;
+        & strong {
+            display: block;
+        }
+    }
+    &__perex {
+        color: var(--gray-dark);
+        @include light;
+        @include text-xs;
+        font-family: var(--font-secondary);
+    }
+    &__image {
+        grid-row: 1 / -1;
+        grid-column: 1;
+        width:100%;
+        position: relative;
+        overflow: hidden;
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .3s ease;
+            width: 100%;
+            
+            &:hover {
+                transform: scale(1.05);
+                transition: all .3s ease;
+            }
+        } 
+        
+
+        &::before {
+            padding-top: var(--aspect-ratio, 80%);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@mixin light{
+    font-weight: var(--font-light);
+}
+
+@mixin regular{
+    font-weight: var(--font-regular);
+}
+
+@mixin semibold{
+    font-weight: var(--font-semibold);
+}
+
+// @mixin bold{
+//     font-weight: var(--font-bold);
+// }
+

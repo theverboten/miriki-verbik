@@ -1,0 +1,30 @@
+.icon-row {
+    padding-bottom: calc(var(--section-padding) * 2);
+
+    &__content {
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    &__icon {
+        display: flex;
+        max-width: 90px;
+        height: 70px;
+        width: 100%;
+        margin-bottom: var(--paragraph-spacing);
+    }
+    &__title {
+        @include text-sm;
+        @include semibold;
+        margin-bottom: 0.5rem;
+    }
+    &__perex {
+        font-family: var(--font-secondary);
+    }
+}
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+@include bp(lg) {
+
+}
