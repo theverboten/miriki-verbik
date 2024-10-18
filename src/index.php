@@ -16,7 +16,7 @@
     
     'class' => '--smaller-title',
     'topTitle' => 'Pojďme spolupracovat.',
-    'topPerex' => 'Pokud máte jakýkoliv dotaz, přání, neváhejte nás kontaktovat. ',
+    'topPerex' => 'Pokud máte jakýkoliv dotaz, přání, neváhejte nás kontaktovat níže: ',
     'buttonUrl' => 'onas',
     'buttonText' => 'kontaktujte nás',
             ]); ?>
